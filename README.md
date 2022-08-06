@@ -1,7 +1,9 @@
 # Webpage of iitifox Vtuber 稻乙緹iitifox形象網站
 * Aurthor: int
 
-Build with gulp jquery and scss. 此網站使用gulp、jquery與scss製作
+Build with gulp jquery and scss. 
+<br>
+此網站使用gulp、jquery與scss製作
 
 ## Files & Directories 檔案結構
 
@@ -30,7 +32,8 @@ Build with gulp jquery and scss. 此網站使用gulp、jquery與scss製作
   * index.js
 
 ## Image Source 圖片來源
-Thanks following for the permission to use the images. The copyright of the images are owned by the artist, and they are only for the presentation of the website without any commercial use. 
+Thanks following for the permission to use the images. The copyright of the images are owned by the artist, and they are only for the presentation of the website without any commercial use.
+<br> 
 感謝以下授權圖片使用，圖片版權皆為繪師所有，僅供網站之呈現並無任何商業用途
 
 * logo: 
@@ -49,7 +52,6 @@ Thanks following for the permission to use the images. The copyright of the imag
 
 The gulp enviroment template is provided by Hexschool
 本次環境使用六角學院提供之gulp模板
+>[六角學院](https://github.com/hexschool)
 
-[六角學院](https://github.com/hexschool)
-
-> Special thanks for [gahwa17](https://github.com/gahwa17) providing a lot of design ideas. 特別感謝[gahwa17](https://github.com/gahwa17)提供設計意見
+**Special thanks for [gahwa17](https://github.com/gahwa17) providing a lot of design ideas. 特別感謝[gahwa17](https://github.com/gahwa17)提供設計意見**
