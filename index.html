@@ -1,10 +1,33 @@
----
-title: 稻乙緹iitifox
-layout: ./app/layout.ejs
-engine: ejs
-current: index
----
+<!DOCTYPE html>
+<html lang="en">
 
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>稻乙緹iitifox</title>
+  <link rel="stylesheet" href="./assets/style/all.css">
+  <link rel="icon" type="image/x-icon" href="./assets/images/favicon.png">
+  <script src="https://kit.fontawesome.com/fff1fd626f.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+  <header class="bg-third-theme p-fixed">
+    <div class="header container d-flex">
+      <a href="#"><h1>稻乙緹<span class="fs-italic">iitifox Vtuber</span></h1></a>
+      <ul class="navbar-list d-flex">
+        <li><a href="#profile" class="fw-m text-center py-1-5">自我介紹</a></li>
+        <li><a href="#short" class="fw-m text-center py-1-5">精華短片</a></li>
+        <li><a href="#spot" class="fw-m text-center py-1-5">出沒地點</a></li>
+        <li><a href="#schedule" class="fw-m text-center py-1-5">行程表</a></li>
+        <li><a href="#event" class="fw-m text-center py-1-5">當前活動</a></li>
+        <li><a href="#donate" class="fw-m text-center py-1-5">餵食乙緹</a></li>
+      </ul>
+      <a href="#" class="menu-btn fs-md"><i class="fa-solid fa-bars"></i></a>
+    </div>
+  </header>
+
+  
 <main>
   <section class="banner text-center mb-6">
     <div class="container">
@@ -213,3 +236,22 @@ current: index
     </div>
   </section>
 </main>
+
+  <footer class="bg-theme text-center">
+    <div class="footer container d-flex jc-sb py-3 px-1-5">
+      <p>Copyright© 2022 Int.</p>
+      <p>圖片版權為繪師所有，僅用於網站呈現</p>
+      <ul class="d-flex jc-c">
+        <li><a href="https://github.com/huanginch/" class="pr-2"><i class="fa-brands fa-github"></i></a></li>
+        <li><a href="https://twitter.com/int60196354"><i class="fa-brands fa-twitter"></i></a></li>
+      </ul>
+    </div>
+  </footer>
+  <!-- <div class="modal p-fixed">
+    Place at bottom of page
+  </div> -->
+  <script src="./assets/js/vendors.js"></script>
+  <script src="./assets/js/all.js"></script>
+</body>
+
+</html>
