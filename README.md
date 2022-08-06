@@ -49,6 +49,7 @@ Thanks following for the permission to use the images. The copyright of the imag
 
 The gulp enviroment template is provided by Hexschool
 本次環境使用六角學院提供之gulp模板
+
 [六角學院](https://github.com/hexschool)
 
 > Special thanks for [gahwa17](https://github.com/gahwa17) providing a lot of design ideas. 特別感謝[gahwa17](https://github.com/gahwa17)提供設計意見
