@@ -1,0 +1,15 @@
+@import "./helper/reset";
+@import "./helper/variable";
+@import "./helper/mixin";
+@import "./helper/base";
+@import "./helper/utilies";
+
+@import "./owlcarousel/owl.carousel.scss";
+@import "./owlcarousel/owl.theme.default.scss";
+@import "./owlcarousel/owl.theme.green.scss";
+
+@import "./layout/layout";
+@import "./pages/index";
+
+// font
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC:wght@400;500;700&family=Roboto+Mono:ital,wght@0,400;1,100;1,400&family=Roboto:wght@400;500;900&display=swap');@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+TC&family=Roboto+Mono:ital,wght@0,400;1,100;1,400&family=Roboto:wght@400;500;900&display=swap');

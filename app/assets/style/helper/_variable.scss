@@ -1,0 +1,29 @@
+// color
+$primary: #F87A8F;
+$secondary: #FAC8D3;
+$third: rgba(248, 122, 143, .8);
+$info: #4F0F26;
+$white: #fff;
+$black: #000;
+// $alert: #B9C8F1;
+
+// font
+$fs-base: 1rem; //16px
+$fs-sm: $fs-base * 1.25; //20px
+$fs-md: $fs-base * 1.5; //24px
+$fs-lg: $fs-base * 2.25; //36px
+$h1-font-size: $fs-base * 4; //64px
+$h2-font-size: $fs-lg; //36px
+$h3-font-size: $fs-md; //24px
+
+//font-weight
+$fw-base: normal;
+$fw-medium: 500;
+$fw-bold: bold;
+
+// line height
+$lh-base: 1.5;
+// $lh-sm: 1.2;
+
+// spacer
+$space: 0.5rem; //8px

@@ -1,0 +1,72 @@
+// @font-face {
+//     font-family: "Cubic 11";
+//     src: url("../../font/Cubic_11/fonts/ttf/Cubic_11_1.010_R.ttf") format('truetype'),
+//     url("../../font/Cubic_11/fonts/web/Cubic_11_1.010_R.woff") format('woff'),
+//     url("../../font/Cubic_11/fonts/web/Cubic_11_1.010_R.woff2") format('woff2');
+// }
+
+*,
+*::before,
+*::after {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: "Noto Sans TC", Roboto, Arial, sans-serif;
+    color: $info;
+    font-size: $fs-base;
+    line-height: $lh-base;
+    background: url("../images/background.png") no-repeat, $secondary;
+    background-size: cover;
+    background-position: center;
+    background-attachment: fixed;
+
+    @include phone {
+        background-position: 80%;
+    }
+}
+
+img {
+    vertical-align: middle;
+    max-width: 100%;
+    height: auto;
+}
+
+a {
+    text-decoration: none;
+    color: $info;
+}
+
+// header styles
+h1 {
+    line-height: $lh-base;
+    font-size: $h1-font-size;
+    font-weight: $fw-bold;
+
+    @include pad {
+        font-size: $fs-sm;
+    }
+}
+
+h2 {
+    line-height: $lh-base;
+    font-size: $h2-font-size;
+    font-weight: $fw-bold;
+
+    @include phone {
+        font-size: $fs-sm;
+    }
+}
+
+h3 {
+    line-height: $lh-base;
+    font-size: $h3-font-size;
+
+    @include pad {
+        font-size: $fs-sm;
+    }
+
+    @include phone {
+        font-size: $fs-base*1.125; //18px
+    }
+}
