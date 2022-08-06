@@ -407,79 +407,53 @@
 .event {
     text-align: center;
 
-    &-info {
-        width: 50%;
-        margin-left: auto;
-        margin-right: auto;
-        display: none;
+    &-cards {
+        padding-bottom: $space * 2;
+    }
+    
+    &-card {
 
-        @include pad {
-            display: block;
+        a{
+            padding: $space;
+            background: $white;
+            border-radius: 1.25rem;
         }
+    
     }
 
-    .owl-carousel {
-        .owl-stage {
-            display: flex;
-        }
-        .owl-item {
-            display: flex;
-            flex: 1 0 auto;
-            justify-content: center;
-        }
+    .slick-track {
+        padding-top: $space * 6;
     }
 
-    .owl-theme .item {
-        width: 50%;
-        // background: $white;
-        // border-radius: 1.25rem;
-        display: flex;
-        flex: 1 0 auto;
-        flex-direction: column;
-        
-        padding: $space;
-        .item-img {
-            width: 5rem;
-            margin: 0 auto $space auto;
-        }
-
-        @include phone {
-            width: 100%;
-        }
+    .slick-slide {
+        margin: $space * 2;
+        position: relative;
     }
 
-    .event-card {
-        flex-grow: 1;
-        width: 50%;
-        justify-content: center;
-        align-items: stretch;
+    .slick-slide .item-img {
+        max-width: 50%;
         margin: 0 auto;
-        padding: $space;
-        background: $white;
-        border-radius: 1.25rem;
+    }
 
-        @include phone {
-            width: 70%;
-        }
+    .slick-dots {
+        padding-bottom: $space*3;
+    }
+
+    .slick-dots li button:before {
+        font-size: 3rem;
     }
     
     .hover-image {
-        width: 50%;
+        width: 100%;
         height: 100%;
+        border-radius: 1.25rem;
         position: absolute;
         transition: .5s ease;
         top: 50%;
         left: 50%;
         opacity: 0;
         transform: translate(-50%, -50%);
-
-        img {
-            width: 100%;
-            height: 100%;
-            object-fit: cover;
-            border-radius: 1.25rem;
-            margin: 0 auto;
-        }
+        object-fit: cover;
 
         &:hover,
         &:active {

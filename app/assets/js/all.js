@@ -82,33 +82,45 @@ $(document).ready(() => {
     );
   });
 
-  // owl-carousel plugin
-  $('.owl-carousel').owlCarousel({
-    loop: true,
-    margin: 10,
-    nav: true,
-    responsive: {
-      0: {
-        items: 1
+  // slick carousel
+  $('.event-cards').slick({
+    dots: true,
+    infinite: false,
+    speed: 300,
+    slidesToShow: 4,
+    slidesToScroll: 1,
+    responsive: [
+      {
+        breakpoint: 992,
+        settings: {
+          slidesToShow: 2,
+          slidesToScroll: 1,
+          dots: false,
+        }
       },
-      768: {
-        items: 2
+      {
+        breakpoint: 768,
+        settings: {
+          slidesToShow: 1,
+          slidesToScroll: 1,
+          infinite: true,
+          dots: true,
+        }
       },
-      // 992: {
-      //   items: 2
+      // {
+      //   breakpoint: 480,
+      //   settings: {
+      //     slidesToShow: 1,
+      //     slidesToScroll: 1
+      //   }
       // }
-    }
-  })
+    ]
+  });
+
+
 });
 
 // hambar close animation
 $('.navbar-list li a').click(function (e) {
   $('.navbar-list').removeClass('show');
 })
-
-// $body = $("body");
-
-  // $(window).load({
-  //   ajaxStart: function () { $body.addClass("loading"); },
-  //   ajaxStop: function () { $body.removeClass("loading"); }
-  // });

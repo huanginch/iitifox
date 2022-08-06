@@ -38,6 +38,6 @@
     "minimist": "^1.2.0",
     "morgan": "^1.9.1",
     "node-sass": "^4.12.0",
-    "owl.carousel": "^2.3.4"
+    "slick-carousel": "^1.8.1"
   }
 }
