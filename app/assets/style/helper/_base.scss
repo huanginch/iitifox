@@ -16,13 +16,18 @@ body {
     color: $info;
     font-size: $fs-base;
     line-height: $lh-base;
-    background: url("../images/background.png") no-repeat, $secondary;
+    background: url("../images/background-lg.png") no-repeat, $secondary;
     background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
-    @include phone {
+    @include pad {
+        background-image: url("../images/background-md.png") no-repeat;
         background-position: 80%;
+    }
+
+    @include phone {
+        background-image: url("../images/background-sm.png") no-repeat;
     }
 }
 

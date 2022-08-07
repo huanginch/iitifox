@@ -250,6 +250,10 @@
             }
         }
 
+        @media (max-width:1200px) {
+            align-items: center;
+        }
+
         @include pad {
             display: flex;
             justify-content: space-between;
@@ -380,9 +384,13 @@
     width: 100%;
     height: 100%;
     z-index: -1;
-    background: url("../images/schedule-reverse.jfif") no-repeat;
+    background: url("../images/schedule-reverse-lg.jfif") no-repeat;
     background-position: center;
     background-size: cover;
+
+    @include pad {
+        background-image: url("../images/schedule-reverse-sm.jpg");
+    }
 
     @include phone-sm {
         background-position: 70%;
