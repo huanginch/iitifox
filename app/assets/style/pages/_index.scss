@@ -477,6 +477,15 @@
 }
 
 // donate part
+.donate-container {
+    width: 60%;
+    margin: 0 auto;
+
+    @include pad {
+        width: 80%;
+    }
+}
+
 .donate-content {
     background: rgba($color: $white, $alpha: .5);
     padding-bottom: $space * 4;
@@ -492,13 +501,14 @@
 }
 
 .links-list {
-
     li {
-        
+        p {
+            transition: all .3s ease;
+        }
         &:hover,
         &:active {
             p {
-                transition: all .3s ease;
+                
                 background-image: url("../images/fox-button-hover.png");
             }
         }
@@ -535,9 +545,6 @@
 
 .donate-song {
 
-    width: 60%;
-    margin: 0 auto;
-
     h3 {
         padding: $space*3 0;
     }
@@ -568,11 +575,7 @@
 
         &:hover,
         &:active {
-            box-shadow: 2px 2px 2px 0 $third;
+            box-shadow: 2px 2px 5px 2px rgba(248, 122, 143, .5);;
         }
-    }
-
-    @include pad {
-        width: 80%;
     }
 }
