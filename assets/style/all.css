@@ -142,6 +142,7 @@ body {
   line-height: 1.5;
   background: url("../images/background-lg.png") no-repeat, #FAC8D3;
   background-size: cover;
+  -webkit-background-size: cover;
   background-position: center;
   background-attachment: fixed; }
   @media (max-width: 995px) {
@@ -183,6 +184,16 @@ h3 {
   @media (max-width: 767px) {
     h3 {
       font-size: 1.125rem; } }
+
+::-webkit-scrollbar {
+  width: 0.75rem; }
+  ::-webkit-scrollbar-track {
+    background: rgba(248, 122, 143, 0.8); }
+  ::-webkit-scrollbar-thumb {
+    background: #FAC8D3;
+    border-radius: 1rem; }
+    ::-webkit-scrollbar-thumb:hover {
+      background-color: #4F0F26; }
 
 .container {
   margin: 0 auto;
@@ -611,7 +622,10 @@ header {
           padding: 0px; } }
     .header .navbar-list a {
       display: block;
-      border-bottom: 5px solid rgba(0, 0, 0, 0); }
+      border-bottom: 5px solid rgba(0, 0, 0, 0);
+      -webkit-transition: all .3s linear;
+      -o-transition: all .3s linear;
+      transition: all .3s linear; }
       .header .navbar-list a:hover, .header .navbar-list a:focus {
         border-bottom: 5px solid #4F0F26; }
         @media (max-width: 767px) {
@@ -664,7 +678,10 @@ header {
   font-size: 1.5rem; }
   .footer a {
     line-height: 1.5;
-    font-size: 1.5rem; }
+    font-size: 1.5rem;
+    -webkit-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    transition: all .3s ease; }
     @media (max-width: 995px) {
       .footer a {
         font-size: 1.25rem; } }
@@ -952,13 +969,20 @@ header {
     @media (max-width: 767px) {
       .spot-main {
         font-size: 1rem; } }
-  .spot .main-card:hover, .spot .main-card:active {
-    background: #fff;
-    border: 5px solid #F87A8F;
-    color: #F87A8F; }
+  .spot .main-card {
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
+    .spot .main-card:hover, .spot .main-card:active {
+      background: #fff;
+      border: 5px solid #F87A8F;
+      color: #F87A8F; }
   .spot a {
     padding: 1.5rem;
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    -webkit-transition: all .5s ease;
+    -o-transition: all .5s ease;
+    transition: all .5s ease; }
     @media (max-width: 995px) {
       .spot a {
         padding: 1rem; } }
@@ -1101,6 +1125,9 @@ header {
         padding-bottom: 1rem; } }
 
 .links-list li:hover p, .links-list li:active p {
+  -webkit-transition: all .3s ease;
+  -o-transition: all .3s ease;
+  transition: all .3s ease;
   background-image: url("../images/fox-button-hover.png"); }
 
 .links-list img {
@@ -1142,7 +1169,10 @@ header {
       .donate-song img {
         width: 60%; } }
   .donate-song-content {
-    border-radius: 2rem; }
+    border-radius: 2rem;
+    -webkit-transition: all .3s ease-in;
+    -o-transition: all .3s ease-in;
+    transition: all .3s ease-in; }
     .donate-song-content p {
       max-width: 50%;
       margin: 0 auto;
@@ -1152,8 +1182,8 @@ header {
           max-width: 100%;
           font-size: 1rem; } }
     .donate-song-content:hover, .donate-song-content:active {
-      -webkit-box-shadow: 4px 4px 4px 0 rgba(248, 122, 143, 0.8);
-              box-shadow: 4px 4px 4px 0 rgba(248, 122, 143, 0.8); }
+      -webkit-box-shadow: 2px 2px 2px 0 rgba(248, 122, 143, 0.8);
+              box-shadow: 2px 2px 2px 0 rgba(248, 122, 143, 0.8); }
   @media (max-width: 995px) {
     .donate-song {
       width: 80%; } }
