@@ -652,8 +652,9 @@ header {
         @media (max-width: 767px) {
           .header .navbar-list a:hover::after, .header .navbar-list a:active::after {
             opacity: 0; } }
-      .header .navbar-list a:hover, .header .navbar-list a:active {
-        background-color: #fff; }
+      @media (max-width: 767px) {
+        .header .navbar-list a:hover, .header .navbar-list a:active {
+          background-color: #fff; } }
     @media (max-width: 995px) {
       .header .navbar-list {
         font-size: 1rem; } }
