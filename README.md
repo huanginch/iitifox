@@ -38,10 +38,12 @@ Thanks following for the permission to use the images. The copyright of the imag
 
 * logo: 
   * https://twitter.com/syakehaita/status/1431499285321826304?s=20&t=wvqk3vwhT8QRvSMxM54tDw
-* icons: 
-  * https://twitter.com/MiruuArt/status/1538919056190980102?s=20&t=MFKK5yfwPoYCfcvi4ZNQDA
-  * https://twitter.com/uyu_arts
+* profile icon 自我介紹icon: 
   * https://twitter.com/mica_1130
+* favicon、marshmallow icon 網站icon、棉花糖icon:
+  * https://twitter.com/uyu_arts
+* other icons 其他icon:
+  * https://twitter.com/MiruuArt/status/1538919056190980102?s=20&t=MFKK5yfwPoYCfcvi4ZNQDA
 * schedule meme template 行程表迷因模板:
   * discord: 吸貓吸起來#3171
 * schedule background 行程表背景: 
