@@ -626,26 +626,34 @@ header {
             align-items: center;
     font-size: 1.5rem; }
     .header .navbar-list li {
-      padding: 0 0.5rem; }
+      padding: 0 0.5rem;
+      position: relative; }
       @media (max-width: 767px) {
         .header .navbar-list li {
           width: 100%;
           padding: 0px; } }
     .header .navbar-list a {
-      display: block;
-      border-bottom: 5px solid rgba(0, 0, 0, 0);
-      -webkit-transition: all .3s linear;
-      -o-transition: all .3s linear;
-      transition: all .3s linear; }
-      .header .navbar-list a:hover, .header .navbar-list a:focus {
-        border-bottom: 5px solid #4F0F26; }
+      display: block; }
+      .header .navbar-list a::after {
+        content: '';
+        position: absolute;
+        bottom: -5px;
+        left: 0;
+        width: 100%;
+        height: 5px;
+        background-color: #4F0F26;
+        opacity: 0;
+        -webkit-transition: all .3s ease-in;
+        -o-transition: all .3s ease-in;
+        transition: all .3s ease-in; }
+      .header .navbar-list a:hover::after, .header .navbar-list a:active::after {
+        opacity: 1;
+        bottom: 0; }
         @media (max-width: 767px) {
-          .header .navbar-list a:hover, .header .navbar-list a:focus {
-            background-color: #fff;
-            border: none; } }
-      @media (max-width: 767px) {
-        .header .navbar-list a {
-          border: none; } }
+          .header .navbar-list a:hover::after, .header .navbar-list a:active::after {
+            opacity: 0; } }
+      .header .navbar-list a:hover, .header .navbar-list a:active {
+        background-color: #fff; }
     @media (max-width: 995px) {
       .header .navbar-list {
         font-size: 1rem; } }
