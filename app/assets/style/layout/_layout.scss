@@ -75,7 +75,9 @@ header {
 
             &:hover,
             &:active {
-                background-color: $white;
+               @include phone {
+                    background-color: $white;
+               }
             }
             
         }
