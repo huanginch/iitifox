@@ -18,6 +18,7 @@ body {
     line-height: $lh-base;
     background: url("../images/background-lg.png") no-repeat, $secondary;
     background-size: cover;
+    -webkit-background-size: cover;
     background-position: center;
     background-attachment: fixed;
 
@@ -69,5 +70,22 @@ h3 {
 
     @include phone {
         font-size: $fs-base*1.125; //18px
+    }
+}
+
+::-webkit-scrollbar {
+
+    width: 0.75rem;
+
+    &-track {
+        background: $third;
+    }
+
+    &-thumb {
+        background: $secondary;
+        border-radius: 1rem;
+        &:hover {
+            background-color: $info;
+        }
     }
 }

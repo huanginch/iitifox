@@ -44,7 +44,7 @@ let envOptions = {
   vendors: {
     src: [
       `${nodePath}/jquery/dist/**/jquery.min.js`,
-      // `${nodePath}/owl.carousel/dist/**/owl.carousel.min.js` //new add
+      `${nodePath}/slick-carousel/slick/slick.min.js`, //new add
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,

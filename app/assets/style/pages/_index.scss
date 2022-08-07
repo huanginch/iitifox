@@ -284,6 +284,7 @@
     }
 
     .main-card {
+        transition: all .5s ease;
         &:hover,
         &:active {
             background: $white;
@@ -295,6 +296,7 @@
     a {
         padding: $space * 3;
         border-radius: 2rem;
+        transition: all .5s ease;
 
         @include pad {
             padding: $space * 2;
@@ -492,9 +494,11 @@
 .links-list {
 
     li {
+        
         &:hover,
         &:active {
             p {
+                transition: all .3s ease;
                 background-image: url("../images/fox-button-hover.png");
             }
         }
@@ -549,6 +553,7 @@
 
     &-content {
         border-radius: 2rem;
+        transition: all .3s ease-in;
 
         p {
             max-width: 50%;
@@ -563,7 +568,7 @@
 
         &:hover,
         &:active {
-            box-shadow: 4px 4px 4px 0 $third;
+            box-shadow: 2px 2px 2px 0 $third;
         }
     }
 
