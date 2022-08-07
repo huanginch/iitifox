@@ -1113,6 +1113,7 @@ header {
   .event .slick-dots li button:before {
     font-size: 3rem; }
   .event .hover-image {
+    background-color: #fff;
     width: 100%;
     height: 100%;
     border-radius: 1.25rem;
@@ -1127,7 +1128,9 @@ header {
         -ms-transform: translate(-50%, -50%);
             transform: translate(-50%, -50%);
     -o-object-fit: cover;
-       object-fit: cover; }
+       object-fit: cover;
+    -o-object-position: center;
+       object-position: center; }
     .event .hover-image:hover, .event .hover-image:active {
       opacity: 1; }
     @media (max-width: 767px) {
