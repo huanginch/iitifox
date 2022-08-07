@@ -148,9 +148,6 @@ body {
     body {
       background-image: url("../images/background-md.png") no-repeat;
       background-position: 80%; } }
-  @media (max-width: 767px) {
-    body {
-      background-image: url("../images/background-sm.png") no-repeat; } }
 
 img {
   vertical-align: middle;
