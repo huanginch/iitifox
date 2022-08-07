@@ -25,10 +25,6 @@ body {
         background-image: url("../images/background-md.png") no-repeat;
         background-position: 80%;
     }
-
-    @include phone {
-        background-image: url("../images/background-sm.png") no-repeat;
-    }
 }
 
 img {
