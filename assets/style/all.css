@@ -144,13 +144,14 @@ body {
   background-size: cover;
   -webkit-background-size: cover;
   background-position: center;
-  -webkit-background-position: center;
-  background-attachment: fixed;
-  -webkit-background-attachment: fixed; }
+  background-position-x: 50%;
+  background-position-y: 50%;
+  background-attachment: fixed; }
   @media (max-width: 995px) {
     body {
       background-image: url("../images/background-md.png");
       background-position: 80%;
+      background-position-x: 80%;
       -webkit-background-position: 80%; } }
 
 img {
