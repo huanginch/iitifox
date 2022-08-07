@@ -11,7 +11,7 @@
 }
 
 @mixin phone-sm {
-    @media (max-width: 414px) {
+    @media (max-width: 480px) {
         @content;
     }
 }
