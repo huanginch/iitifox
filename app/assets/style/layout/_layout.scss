@@ -1,3 +1,22 @@
+.background {
+    background: url("../images/background-lg.png") no-repeat, $secondary;
+    background-size: cover;
+    -webkit-background-size: cover;
+    background-position: center;
+    background-position-x: 50%;
+    background-position-y: 50%;
+    // background-attachment: fixed;
+    position: fixed;
+    height: 100%;
+    width: 100%;
+
+    @include pad {
+        background-image: url("../images/background-md.png");
+        background-position: 80%;
+        background-position-x: 80%;
+    }
+}
+
 header {
     z-index: 10;
     width: 100%;

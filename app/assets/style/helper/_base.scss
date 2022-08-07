@@ -11,25 +11,16 @@
     box-sizing: border-box;
 }
 
+html {
+    min-width: 100%;
+    min-height: 100%;
+}
+
 body {
     font-family: "Noto Sans TC", Roboto, Arial, sans-serif;
     color: $info;
     font-size: $fs-base;
     line-height: $lh-base;
-    background: url("../images/background-lg.png") no-repeat, $secondary;
-    background-size: cover;
-    -webkit-background-size: cover;
-    background-position: center;
-    background-position-x: 50%;
-    background-position-y: 50%;
-    background-attachment: fixed;
-
-    @include pad {
-        background-image: url("../images/background-md.png");
-        background-position: 80%;
-        background-position-x: 80%;
-        -webkit-background-position: 80%;
-    }
 }
 
 img {
