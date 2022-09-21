@@ -75,6 +75,15 @@ function vendorsJs() {
     .pipe(gulp.dest(envOptions.vendors.path));
 }
 
+// function sitemap() {
+//   return gulp.src(envOptions.html.src, {
+//     read: false
+//   })
+//     .pipe(sitemap({
+//       siteUrl: 'https://huanginch.github.io/iitifox/'
+//     }))
+//     .pipe(gulp.dest('./public'));
+// }
 
 function browser() {
   browserSync.init({
