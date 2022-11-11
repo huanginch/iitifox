@@ -38,7 +38,6 @@ header {
         justify-content: space-between;
         align-items: center;
         font-size: $fs-md;
-        
 
         li {
             padding:0 $space;
@@ -80,6 +79,13 @@ header {
                }
             }
             
+        }
+
+        .birth {
+            font-size: 26px;
+            background-color: $secondary;
+            padding: 5px 10px;
+            border-radius: 10px;
         }
 
         @include pad {
