@@ -655,6 +655,11 @@ header {
       @media (max-width: 767px) {
         .header .navbar-list a:hover, .header .navbar-list a:active {
           background-color: #fff; } }
+    .header .navbar-list .birth {
+      font-size: 26px;
+      background-color: #FAC8D3;
+      padding: 5px 10px;
+      border-radius: 10px; }
     @media (max-width: 995px) {
       .header .navbar-list {
         font-size: 1rem; } }
