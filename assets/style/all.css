@@ -847,6 +847,10 @@ header {
         -webkit-box-pack: center;
             -ms-flex-pack: center;
                 justify-content: center; } }
+  .profile .mail {
+    font-size: 18px; }
+    .profile .mail a:hover {
+      opacity: 0.7; }
   .profile-text {
     font-size: 1.25rem;
     width: 70%; }
