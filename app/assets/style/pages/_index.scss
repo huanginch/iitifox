@@ -130,6 +130,14 @@
         
     }
 
+    .mail {
+        font-size: 18px;
+
+        a:hover {
+            opacity: 0.7;
+        }
+    }
+
     // &-text {
     //     @include pad {
     //         flex-direction: column;
