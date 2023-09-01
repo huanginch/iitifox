@@ -67,31 +67,6 @@ $(document).ready(function () {
       scrollTop: $(hrefLink).offset().top - title_offset //直接到相對位置，再減掉標題的位置
 
     }, 800);
-  }); // slick carousel
-
-  $('.event-cards').slick({
-    dots: true,
-    infinite: false,
-    arrows: false,
-    speed: 300,
-    slidesToShow: 4,
-    slidesToScroll: 1,
-    responsive: [{
-      breakpoint: 992,
-      settings: {
-        slidesToShow: 2,
-        slidesToScroll: 1,
-        dots: false
-      }
-    }, {
-      breakpoint: 768,
-      settings: {
-        slidesToShow: 1,
-        slidesToScroll: 1,
-        infinite: true,
-        dots: true
-      }
-    }]
   });
 }); // hambar close animation
 
@@ -99,9 +74,7 @@ $('.navbar-list li a').click(function (e) {
   $('.navbar-list').removeClass('show');
 }); // swiper
 
-var swiper = new Swiper('.swiper', {
-  // Optional parameters
-  effect: "Fade",
+var swiperShort = new Swiper('.swiper-short', {
   loop: true,
   slidesPerView: 1,
   centeredSlides: true,
@@ -123,6 +96,25 @@ var swiper = new Swiper('.swiper', {
   navigation: {
     nextEl: '.swiper-button-next',
     prevEl: '.swiper-button-prev'
+  }
+});
+var swiperEvent = new Swiper('.swiper-event', {
+  loop: true,
+  slidesPerView: 1,
+  spaceBetween: 10,
+  breakpoints: {
+    767: {
+      spaceBetween: 50
+    },
+    995: {
+      spaceBetween: 100,
+      slidesPerView: 3
+    }
+  },
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true
   }
 });
 //# sourceMappingURL=all.js.map

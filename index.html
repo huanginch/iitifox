@@ -103,7 +103,7 @@
     </div>
     <div class="container">
       <h2 class="left-title">精華短片</h2>
-      <div class="short-main swiper">
+      <div class="short-main swiper-short">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
           <!-- Slides -->
@@ -138,10 +138,7 @@
               allowfullscreen></iframe>
           </div>
         </div>
-        <!-- If we need pagination -->
         <div class="swiper-pagination"></div>
-      
-        <!-- If we need navigation buttons -->
         <i class="swiper-button-prev fa-solid fa-arrow-left"></i>
         <i class="swiper-button-next fa-solid fa-arrow-right"></i>
       </div>
@@ -227,29 +224,32 @@
     <div class="container">
       <h2 class="right-title">當前活動</h2>
     </div>
-      <div class="container">
-        <div class="event-cards">
-          <div class="event-card d-flex">
+    <div class="container">
+      <div class="swiper-event">
+        <div class="swiper-wrapper event-cards">
+          <div class="swiper-slide event-card d-flex">
             <a href="https://store.line.me/stickershop/author/3541402/zh-Hant" target="_blank" class="d-block">
               <img src="./assets/images/iitiLine.png" alt="iitiLine" class="item-img">
               <h3>Line貼圖上架了!趕快買起來!</h3>
               <img src="./assets/images/line_sticker.png" alt="iiT" class="hover-image">
             </a>
           </div>
-          <div class="event-card d-flex">
+          <div class="swiper-slide event-card d-flex">
             <a href="https://iitifox.cashier.ecpay.com.tw/" target="_blank" class="d-block">
               <img src="./assets/images/iitimoney.png" alt="iitimoney" class="item-img">
               <h3>乙緹周邊賣場<br>二週年瑟瑟抱枕</h3>
               <img src="./assets/images/iitishop.png" alt="bitrh" class="hover-image">
             </a>
           </div>
-          <div class="event-card d-flex">
+          <div class="swiper-slide event-card d-flex">
             <a href="https://marshmallow-qa.com/iitifox" target="_blank" class="d-block">
               <img src="./assets/images/iitiwow.png" alt="iitiwow" class="item-img">
               <h3>有什麼話都可以透過棉花糖告訴乙緹</h3>
               <img src="./assets/images/marshmallow.png" alt="marshmallow" class="hover-image">
             </a>
           </div>
+        </div>
+        <div class="swiper-pagination"></div>
       </div>
     </div>
   </section>
