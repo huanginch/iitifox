@@ -137,7 +137,8 @@ table {
 
 html {
   min-width: 100%;
-  min-height: 100%; }
+  min-height: 100%;
+  overflow-x: hidden; }
 
 body {
   font-family: "Noto Sans TC", Roboto, Arial, sans-serif;
@@ -382,6 +383,9 @@ h3 {
 
 .p-relative {
   position: relative; }
+
+.overflow-x-hidden {
+  overflow-x: hidden; }
 
 .background {
   background: url("../images/background-lg.png") no-repeat, #FAC8D3;
