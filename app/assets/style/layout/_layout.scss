@@ -42,6 +42,15 @@ header {
         li:not(:last-child) {
             padding:0 $space;
             position: relative;
+
+            @media screen and (max-width: 1200px) {
+                font-size: $fs-sm;
+            }
+
+            @include pad {
+                font-size: 18px;
+            }
+
             @include phone {
                 width: 100%;
                 padding: 0px;
@@ -95,6 +104,10 @@ header {
             padding: 5px 10px;
             border-radius: 10px;
             transition: all 0.1s ease-in;
+            @media screen and (max-width: 1200px) {
+                font-size: 20px;
+            }
+            
             @include phone {
                 font-size: 18px;
             }

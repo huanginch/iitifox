@@ -302,31 +302,23 @@
         margin: 0 auto;
     }
 
-    .swiper {
+    .swiper-short {
         width: 100%;
-        padding-left: 100px;
-        padding-right: 100px;
-
-        @include pad {
-            padding-left: 50px;
-            padding-right: 50px;
-        }
-
-        @include phone {
-            padding-left: 0px;
-            padding-right: 0px;
-        }
     }
 
     .swiper-slide {
-        position: relative;
         width: 100%;
-        iframe {
+        display: flex;
+        align-items: center;
+        padding: 0 20px;
+        .video {
             width: 100%;
             height: 700px;
-
+            padding: 0 5%;
+            margin: 0 auto;
             @include pad {
                 height: 500px;
+                padding: auto;
             }
 
             @include phone {
@@ -516,14 +508,13 @@
 // event part
 .event {
     text-align: center;
-
-    &-cards {
-        padding-bottom: $space * 2;
-    }
     
     &-card {
 
         a{
+            width: 500px;
+            height: 200px;
+            margin: 0 auto;
             padding: $space;
             background: $white;
             border-radius: 1.25rem;
@@ -531,26 +522,30 @@
     
     }
 
-    .slick-track {
+    .swiper-event {
         padding-top: $space * 6;
+        padding-bottom: $space * 6;
     }
 
-    .slick-slide {
+    .swiper-slide {
+        width: 300px;
+        height: 200px;
         margin: $space * 2;
-        position: relative;
+
+        .item-img {
+            max-width: 50%;
+            margin: 0 auto;
+        }
     }
 
-    .slick-slide .item-img {
-        max-width: 50%;
-        margin: 0 auto;
-    }
+    .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        background: gray;
 
-    .slick-dots {
-        padding-bottom: $space*3;
-    }
-
-    .slick-dots li button:before {
-        font-size: 3rem;
+        &-active {
+            background: $primary;
+        }
     }
     
     .hover-image {
@@ -571,8 +566,8 @@
         &:active {
             opacity: 1;
         }
-
-        @include phone {
+        
+        @include pad {
             display: none;
         }
     }
