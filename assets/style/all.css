@@ -404,7 +404,7 @@ h3 {
       background-position-x: 80%; } }
 
 header {
-  z-index: 10;
+  z-index: 100;
   width: 100%; }
 
 .header {
