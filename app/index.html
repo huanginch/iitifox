@@ -11,7 +11,7 @@ current: index
       <img src="./assets/images/logo.png" alt="logo" class="logo mt-8">
     </div>
   </section>
-  <section class="profile p-relative" id="profile">
+  <section data-aos="fade-right" class="profile p-relative" id="profile">
     <div class="left-title-bg">
       <!-- title background -->
     </div>
@@ -41,7 +41,7 @@ current: index
           </ul>
         </div>
         <ul class="profile-tags text-balck">
-          <li class="text-center p-relative mb-1 px-2"><span class="fw-m">粉絲名:</span>米餅</li>
+          <li class="text-center p-relative mb-1 px-2"><span class="fw-m">粉絲名:</span>米餅、緹寶</li>
           <li class="text-center p-relative mb-1 px-2"><span class="fw-m">通用Tag:</span>#iitifox</li>
           <li class="text-center p-relative mb-1 px-2"><span class="fw-m">創作Tag:</span>#iitiArt</li>
           <li class="text-center p-relative mb-1 px-2"><span class="fw-m">精華Tag:</span>#iiticlip</li>
@@ -50,33 +50,83 @@ current: index
       </div>
     </div>
   </section>
-  <section class="short p-relative mb-6" id="short">
+  <section data-aos="fade-right" class="fan p-relative mb-6" id="fan">
     <div class="right-title-bg">
       <!-- title background -->
     </div>
     <div class="container">
-      <h2 class="right-title">精華短片</h2>
+      <h2 class="right-title">粉絲形象</h2>
     </div>
-    <div class="short-content-bg">
+    <div class="fan-content-bg">
       <div class="container">
-        <div class="short-content d-flex py-6">
-          <div class="short-subtitle text-center d-flex jc-c">
-            <img src="./assets/images/iitibonk.png" alt="stupid" class="mr-4">
-            <h3 class="direct fw-b">笨遊戲，笨乙緹</h3>
+        <div class="fan-content d-flex py-6">
+          <div class="fan-subtitle text-center d-flex jc-c">
+            <img src="./assets/images/iitibow.png" alt="stupid" class="mr-4">
+            <h3 class="direct fw-b">設計: <a class="fan-designer" href="https://twitter.com/magpie_egg/status/1689178569615060992?s=20" target="_blank">magpie</a></h3>
           </div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/Vn7dz2gw_DA" title="YouTube video player"
-            frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-            allowfullscreen></iframe>
+          <a class="fan-img" href="https://twitter.com/magpie_egg/status/1689178569615060992?s=20" target="_blank">
+            <img src="./assets/images/iitifan.jpg" alt="iitifan">
+          </a>
         </div>
       </div>
     </div>
   </section>
-  <section class="spot p-relative mb-6" id="spot">
+  <section class="short p-relative mb-6" id="short">
     <div class="left-title-bg">
       <!-- title background -->
     </div>
     <div class="container">
-      <h2 class="left-title">出沒地點</h2>
+      <h2 class="left-title">精華短片</h2>
+      <div class="short-main swiper">
+        <!-- Additional required wrapper -->
+        <div class="swiper-wrapper">
+          <!-- Slides -->
+          <div class="swiper-slide">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/YxN6hFXbbhU?si=DQxeWXL8RhlGsfy2"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/GEJtRUzBj08?si=Gbn5TVa0e91WyMBY"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/6o6LoNPa54o?si=ZuPtxDUUUEfMQUQC"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/Vn7dz2gw_DA?si=oMEUVe8r4kIKpSxr"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+          <div class="swiper-slide">
+            <iframe class="video" width="560" height="315" src="https://www.youtube.com/embed/DSZvLPmbmNI?si=fMOlLA2xTeCCnMLf"
+              title="YouTube video player" frameborder="0"
+              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+              allowfullscreen></iframe>
+          </div>
+        </div>
+        <!-- If we need pagination -->
+        <div class="swiper-pagination"></div>
+      
+        <!-- If we need navigation buttons -->
+        <i class="swiper-button-prev fa-solid fa-arrow-left"></i>
+        <i class="swiper-button-next fa-solid fa-arrow-right"></i>
+      </div>
+    </div>
+  </section>
+  <section class="spot p-relative mb-6" id="spot">
+    <div class="right-title-bg">
+      <!-- title background -->
+    </div>
+    <div class="container">
+      <h2 class="right-title">出沒地點</h2>
     </div>
     <div class="spot-main d-flex jc-c pt-5 mb-2-5">
       <a href="https://www.twitch.tv/iitifox" target="_blank" class="d-flex bg-third-theme border shadow main-card ai-center">
@@ -130,26 +180,26 @@ current: index
     <div class="overlay">
       
     </div>
-    <div class="right-title-bg">
-      <!-- title background -->
-    </div>
-    <div class="container">
-      <h2 class="right-title">行程表</h2>
-    </div>
-    <div class="schedule-content container d-flex ai-center jc-sa">
-      <img src="./assets/images/schedule-meme.png" alt="schedule-meme">
-      <div class="schedule-text text-center">
-        <h3 class="fw-m">聰明乙緹不會被區區行程表束縛住的!</h3>
-        <p>其實只是每次都忘記，就算做了也不會照著時間開，乾脆不做。(^ゝ∀･^)</p>
-      </div>
-    </div>
-  </section>
-  <section class="event p-relative mb-6" id="event">
     <div class="left-title-bg">
       <!-- title background -->
     </div>
     <div class="container">
-      <h2 class="left-title">當前活動</h2>
+      <h2 class="left-title">行程表</h2>
+    </div>
+    <div class="schedule-content container d-flex ai-center jc-sa">
+      <div class="schedule-text text-center">
+        <h3 class="fw-m">聰明乙緹不會被區區行程表束縛住的!</h3>
+        <p>其實只是每次都忘記，就算做了也不會照著時間開，乾脆不做。(^ゝ∀･^)</p>
+      </div>
+      <img src="./assets/images/schedule-meme.png" alt="schedule-meme">
+    </div>
+  </section>
+  <section class="event p-relative mb-6" id="event">
+    <div class="right-title-bg">
+      <!-- title background -->
+    </div>
+    <div class="container">
+      <h2 class="right-title">當前活動</h2>
     </div>
       <div class="container">
         <div class="event-cards">
@@ -178,11 +228,11 @@ current: index
     </div>
   </section>
   <section class="donate p-relative" id="donate">
-    <div class="right-title-bg">
+    <div class="left-title-bg">
       <!-- title background -->
     </div>
     <div class="container">
-      <h2 class="right-title">餵食乙緹</h2>
+      <h2 class="left-title">餵食乙緹</h2>
     </div>
     <div class="donate-content text-center">
       <div class="container donate-container">

@@ -21,6 +21,7 @@ body {
     color: $info;
     font-size: $fs-base;
     line-height: $lh-base;
+    overflow-x: hidden;
 }
 
 img {

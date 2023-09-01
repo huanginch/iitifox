@@ -31,6 +31,7 @@ let envOptions = {
     src: [
       `${srcPath}/assets/style/**/*.scss`,
       `${srcPath}/assets/style/**/*.sass`,
+      `${nodePath}/swiper/swiper.scss`
     ],
     path: `${distPath}/assets/style`,
   },
@@ -44,7 +45,8 @@ let envOptions = {
   vendors: {
     src: [
       `${nodePath}/jquery/dist/**/jquery.min.js`,
-      `${nodePath}/slick-carousel/slick/slick.min.js`, //new add
+      `${nodePath}/slick-carousel/slick/slick.min.js`,
+      `${nodePath}/swiper/swiper-bundle.min.js`,
     ],
     concat: 'vendors.js',
     path: `${distPath}/assets/js`,

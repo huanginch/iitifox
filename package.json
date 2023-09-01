@@ -39,6 +39,7 @@
     "minimist": "^1.2.0",
     "morgan": "^1.9.1",
     "node-sass": "^4.12.0",
-    "slick-carousel": "^1.8.1"
+    "slick-carousel": "^1.8.1",
+    "swiper": "^10.2.0"
   }
 }

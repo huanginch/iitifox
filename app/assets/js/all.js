@@ -4,27 +4,14 @@ $(document).ready(() => {
   // section load animation
   // web size animation
   if (window.matchMedia("(min-width: 992px)").matches) {
-    $("#profile").css({ "opacity": 0});
+    $("#profile").css({ "left": -350, "opacity": 0});
     $("#profile").animate({ left: 0, opacity: 1 }, 2000);
 
-    $("#short").css({ "opacity": 0});
-    $("#spot").css({ "opacity": 0});
+    $("#fan").css({ "right": -350, "opacity": 0});
 
     // scroll animation
     $(window).scroll(function () {
-      var topDivHeight = $("#profile").height();
-      var viewPortSize = $(window).height();
-      var lastDivHeight = $("#short").height() + viewPortSize - 500;
-
-      var triggerHeight = (topDivHeight - viewPortSize);
-
-      if ($(window).scrollTop() >= triggerHeight && $(window).scrollTop() <= lastDivHeight) {
-        $("#short").animate({ opacity: 1 }, 2000);
-
-      }
-      else {
-        $("#spot").animate({ opacity: 1 }, 2000);
-      }
+      $("#fan").animate({ right: 0, opacity: 1 }, 2000);
     })
   }
   else {
@@ -32,24 +19,10 @@ $(document).ready(() => {
     $("#profile").css({ "opacity": 0, "top": "-=100"});
     $("#profile").animate({top: 0, opacity: 1 }, 2000);
 
-    $("#short").css({ "opacity": 0, "top": "-=100" });
-    $("#spot").css({ "opacity": 0, "top": "-=50" });
+    $("#fan").css({ "opacity": 0, "top": "-=100" });
 
     $(window).scroll(function () {
-      var topDivHeight = $("#profile").height();
-      var viewPortSize = $(window).height();
-      var lastDivHeight = $("#short").height() + viewPortSize - 500;
-
-      // var triggerAt = 0;
-      var triggerHeight = (topDivHeight - viewPortSize); // + triggerAt;
-
-      if ($(window).scrollTop() >= triggerHeight && $(window).scrollTop() <= lastDivHeight) {
-        $("#short").animate({ top: 0, opacity: 1 }, 2000);
-
-      }
-      else {
-        $("#spot").animate({ top: 0, opacity: 1 }, 2000);
-      }
+      $("#fan").animate({ top: 0, opacity: 1 }, 2000);
     })
   }
 
@@ -108,20 +81,41 @@ $(document).ready(() => {
           dots: true,
         }
       },
-      // {
-      //   breakpoint: 480,
-      //   settings: {
-      //     slidesToShow: 1,
-      //     slidesToScroll: 1
-      //   }
-      // }
     ]
   });
-
-
 });
 
 // hambar close animation
 $('.navbar-list li a').click(function (e) {
   $('.navbar-list').removeClass('show');
 })
+
+// swiper
+const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  effect: "Fade",
+  loop: true,
+  slidesPerView: 1,
+  centeredSlides: true,
+  spaceBetween: 10,
+  breakpoints: {
+    767: {
+      spaceBetween: 50,
+    },
+    995: {
+      spaceBetween: 100,
+    }
+  },
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+    clickable: true,
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+});

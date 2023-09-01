@@ -21,7 +21,6 @@ Build with gulp jquery and scss.
         * _variable.scss
       * layout
         * _layout.scss
-      * owlcarousel # owlcarousel plugin styles
       * pages
         * _index.scss
     * all.scss

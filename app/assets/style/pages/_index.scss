@@ -202,8 +202,8 @@
     }
 }
 
-// short part
-.short {
+// fan part
+.fan {
     z-index: 0;
 
     &-content-bg {
@@ -234,6 +234,7 @@
     &-subtitle {
         align-items: start;
         justify-content: end;
+        transition: all .3s ease-in;
 
         img {
             max-width: 40%;
@@ -242,11 +243,19 @@
                 text-align: center;
             }
         }
+
+        &-designer:hover {
+            opacity: 0.7;
+        }
         
         .direct {
             font-size: $h2-font-size;
             -webkit-writing-mode: vertical-lr;
             writing-mode: vertical-lr;
+            
+            a {
+                text-orientation: upright;
+            }
 
             @include pad {
                 font-size: $fs-sm;
@@ -273,11 +282,94 @@
 
     }
 
-    iframe {
+    &-img {
+        transition: all .3s ease-in;
+        object-fit: cover;
+        max-width: 70%;
+        &:hover {
+            box-shadow: 5px 5px 10px 3px rgba(248, 122, 143, .5);
+        }
         @include phone {
+            max-width: fit-content;
             width: 100%;
         }
     }
+}
+
+.short {
+    &-main {
+        padding: 80px 0px;
+        margin: 0 auto;
+    }
+
+    .swiper {
+        width: 100%;
+        padding-left: 100px;
+        padding-right: 100px;
+
+        @include pad {
+            padding-left: 50px;
+            padding-right: 50px;
+        }
+
+        @include phone {
+            padding-left: 0px;
+            padding-right: 0px;
+        }
+    }
+
+    .swiper-slide {
+        position: relative;
+        width: 100%;
+        iframe {
+            width: 100%;
+            height: 700px;
+
+            @include pad {
+                height: 500px;
+            }
+
+            @include phone {
+                height: 400px;
+            }
+        }
+    }
+
+    .swiper-pagination-bullet {
+        width: 15px;
+        height: 15px;
+        background: gray;
+
+        &-active {
+            background: $primary;
+        }
+    }
+
+    .swiper-button-prev,
+    .swiper-button-next {
+        top: 50%;
+        transform: translateY(-50%);
+        width: 50px;
+        height: 50px;
+        background: $primary;
+        border-radius: 50%;
+        opacity: 0.7;
+        position: absolute;
+        z-index: 100;
+        color: white;
+        font-size: 35px;
+        font-weight: 600;
+        transition: all .3s ease-in-out;
+        text-align: center;
+        &:hover {
+            opacity: 1;
+        }
+
+        &::after {
+            content: '';
+        }
+    }
+   
 }
 
 // spot part
@@ -361,7 +453,7 @@
     &-content {
 
         @include phone {
-            flex-direction: column;
+            flex-direction: column-reverse;
         }
     }
     
@@ -394,12 +486,12 @@
     width: 100%;
     height: 100%;
     z-index: 0;
-    background: url("../images/schedule-reverse-lg.jpg") no-repeat;
+    background: url("../images/schedule-lg.jpg") no-repeat;
     background-position: center;
     background-size: cover;
 
     @include pad {
-        background-image: url("../images/schedule-reverse-sm.jpg");
+        background-image: url("../images/schedule-sm.jpg");
     }
 
     @include phone-sm {
