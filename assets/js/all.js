@@ -101,7 +101,7 @@ var swiperShort = new Swiper('.swiper-short', {
 var swiperEvent = new Swiper('.swiper-event', {
   loop: true,
   slidesPerView: 1,
-  spaceBetween: 10,
+  spaceBetween: 15,
   breakpoints: {
     767: {
       spaceBetween: 50
